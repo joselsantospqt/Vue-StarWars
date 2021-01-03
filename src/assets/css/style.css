@@ -1,0 +1,242 @@
+/* @import url('https://fonts.googleapis.com/css?family=News+Cycle:400,700'); */
+
+#app {
+  font-family: News Cycle,
+    Helvetica,
+    Arial,
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+body {
+  background: url("../img/sky2.jpg") no-repeat center center fixed;
+  background-size: cover;
+  width: 100%;
+  scrollbar-color: rebeccapurple green;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.3);
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+  width: 1px !important;
+  background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
+
+#logoHome {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  height: 100%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  animation: logoHome 100s ease-out infinite;
+  position: fixed;
+}
+
+@keyframes logoHome {
+  9% {
+    transform: translateX(-50%) translateY(-50%) scale(2);
+    opacity: 0;
+  }
+
+  9.1% {
+    opacity: 1;
+  }
+
+  14% {
+    opacity: 1;
+  }
+
+  18% {
+    transform: translateX(-50%) translateY(-50%) scale(0.1);
+    opacity: 0;
+  }
+}
+
+#logoHome {
+  background: url("../img/star_wars_logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+#logo {
+  background: url("../img/star_wars_logo.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+}
+
+.alignEnd {
+  margin-right: 0 !important;
+  margin-left: auto !important;
+
+}
+
+.nav-item a {
+  color: white !important;
+}
+
+.navbarEffect {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  font-weight: 300;
+}
+
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: 'News Cycle',
+    sans-serif;
+  color: white;
+}
+
+.nav-item a {
+  font-size: 1.3em;
+  color: white;
+  font-weight: 400;
+}
+
+.bounce-enter-active {
+  animation-delay: 50s;
+  animation: bounce-in 9s;
+}
+
+.bounce-leave-active {
+  animation: bounce-in .5s reverse;
+}
+
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.card-header {
+  background-color: none;
+  background: -webkit-linear-gradient(86deg, #ffffff, #8c878c) !important;
+  background: -o-linear-gradient(86deg, #ffffff, #8c878c) !important;
+  background: linear-gradient(86deg, #ffffff, #8c878c) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #000000;
+}
+
+.card {
+
+  border: 1px solid rgb(10 8 8 / 88%);
+
+}
+
+.home {
+  padding-top: 14em;
+  text-align: left;
+}
+
+@media only screen and (orientation:portrait) {
+
+
+  body {
+    background: url("../img/sky2.jpg") no-repeat center center fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font: 700 1em "News Cycle",
+      sans-serif;
+    letter-spacing: 0.15em;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  body {
+    overflow-y: scroll;
+    scrollbar-color: rebeccapurple green;
+    scrollbar-width: thin;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .home {
+    padding-top: 5em;
+    text-align: center !important;
+  }
+
+  .home img {
+    padding-bottom: 2em;
+  }
+
+  .form-home {
+    justify-content: center;
+  }
+
+
+}
+
+@media screen and (max-width: 280px) {}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

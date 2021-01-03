@@ -1,15 +1,24 @@
-Projeto criado para a disciplina de #vuejs, usando #bootstrap-vue, #VueRouter, #Vuex. 
-O objetivo:
-Consumir informações de uma API, incluir, editar, deletar, validar utlizando tuples.
-Utilizar o LocalStorage para armazenar informações do CRUD.
-Utilizar CSS para tornar um layout elegante 
+# at-starwar
 
-Foi utilizada a SWAPI para ter todos os dados de Star Wars como:
-Planetas, naves espaciais, veículos, pessoas, filmes e espécies
-De todos os SETE filmes de Star Wars
-https://swapi.dev/
+## Project setup
+```
+npm install
+```
 
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
 
+### Compiles and minifies for production
+```
+npm run build
+```
 
-#### INSTALL ####
-WARNING MAN IN WORKING
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
